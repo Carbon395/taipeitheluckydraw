@@ -35,7 +35,7 @@
 
         header {
             width: 100%;
-            padding: 20px 30px;
+            padding: 15px 20px;
             background-color: #ffffff;
             box-shadow: 0 4px 15px rgba(0,0,0,0.06);
             display: flex;
@@ -49,10 +49,10 @@
         .logo {
             font-weight: 800;
             color: var(--temple-red);
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 8px;
             flex-wrap: nowrap;
             white-space: nowrap;
         }
@@ -60,24 +60,24 @@
         .logo span {
             background-color: var(--gold);
             color: var(--wood-dark);
-            padding: 4px 12px;
+            padding: 3px 8px;
             border-radius: 6px;
-            font-size: 1.05rem;
+            font-size: 0.9rem;
             font-weight: bold;
         }
 
         .bureau-tag {
-            font-size: 0.95rem;
+            font-size: 0.85rem;
             color: #666;
             font-weight: 600;
-            letter-spacing: 1px;
+            letter-spacing: 0.5px;
             white-space: nowrap;
         }
 
         .main-container {
             max-width: 680px;
             width: 100%;
-            padding: 25px 20px 40px 20px;
+            padding: 20px 15px 30px 15px;
             text-align: center;
             flex: 1;
             display: flex;
@@ -88,25 +88,26 @@
 
         .hero-title {
             color: var(--temple-red);
-            font-size: 2.3rem;
-            margin-bottom: 12px;
-            letter-spacing: 2px;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
             font-weight: 900;
         }
 
         .hero-subtitle {
             color: #555;
-            font-size: 1.2rem;
-            margin-bottom: 25px;
-            line-height: 1.7;
+            font-size: 1rem;
+            margin-bottom: 20px;
+            line-height: 1.6;
             font-weight: 500;
+            padding: 0 10px;
         }
 
         .fortune-zone {
             position: relative;
-            margin-top: 55px;
-            margin-bottom: 45px;
-            height: 310px;
+            margin-top: 45px;
+            margin-bottom: 35px;
+            height: 280px;
             display: flex;
             justify-content: center;
             align-items: flex-end;
@@ -116,8 +117,8 @@
 
         /* 立體籤筒主體 */
         .stick-container {
-            width: 165px;
-            height: 225px;
+            width: 150px;
+            height: 205px;
             background: linear-gradient(90deg, #421d02 0%, #7d3c10 25%, #bf6923 50%, #824011 75%, #381801 100%);
             border: 4px solid #542503;
             border-radius: 14px 14px 32px 32px;
@@ -130,10 +131,10 @@
         .stick-container::before {
             content: "";
             position: absolute;
-            top: 25px;
+            top: 22px;
             left: -5px;
             right: -5px;
-            height: 14px;
+            height: 12px;
             background: linear-gradient(90deg, #b8860b, #ffe552, #daa520, #b8860b);
             border-top: 1px solid #fff;
             border-bottom: 2px solid #5a3800;
@@ -146,14 +147,14 @@
             top: 54%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 72px;
-            height: 72px;
+            width: 64px;
+            height: 64px;
             background: radial-gradient(circle at 35% 35%, #e53935, #680000);
             color: #ffeb3b;
             border-radius: 50%;
-            font-size: 2.1rem;
+            font-size: 1.8rem;
             font-weight: 900;
-            line-height: 72px;
+            line-height: 64px;
             text-align: center;
             border: 3px solid #ffeb3b;
             box-shadow: inset 2px 2px 6px rgba(255,255,255,0.5), 0 6px 14px rgba(0,0,0,0.45);
@@ -166,19 +167,19 @@
         /* 籤筒內竹籤束 */
         .fortune-sticks-bundle {
             position: absolute;
-            top: -65px;
+            top: -55px;
             left: 50%;
             transform: translateX(-50%);
-            width: 120px;
-            height: 170px;
+            width: 110px;
+            height: 150px;
             z-index: 1;
             pointer-events: none;
             transform-origin: bottom center;
         }
 
         .mini-stick {
-            width: 10px;
-            height: 165px;
+            width: 9px;
+            height: 145px;
             background: linear-gradient(90deg, #b87c3e, #fcead0 40%, #d89952 75%, #8f5623);
             border: 1px solid #734117;
             position: absolute;
@@ -194,7 +195,7 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 10px;
+            height: 9px;
             background: linear-gradient(90deg, #d32f2f, #f44336, #b71c1c);
             border-radius: 5px 5px 0 0;
             border-bottom: 1px solid rgba(0,0,0,0.3);
@@ -203,28 +204,28 @@
         .mini-stick::after {
             content: "";
             position: absolute;
-            top: 45px;
+            top: 40px;
             left: 0;
             width: 100%;
             height: 2px;
             background-color: rgba(90, 45, 10, 0.4);
-            box-shadow: 0 35px 0 rgba(90, 45, 10, 0.4), 0 70px 0 rgba(90, 45, 10, 0.4);
+            box-shadow: 0 30px 0 rgba(90, 45, 10, 0.4), 0 60px 0 rgba(90, 45, 10, 0.4);
         }
 
-        .mini-stick:nth-child(1)  { left: 2px;   transform: rotate(-28deg); height: 152px; }
-        .mini-stick:nth-child(2)  { left: 13px;  transform: rotate(-20deg); height: 162px; }
-        .mini-stick:nth-child(3)  { left: 24px;  transform: rotate(-12deg); height: 168px; }
-        .mini-stick:nth-child(4)  { left: 36px;  transform: rotate(-4deg);  height: 160px; }
-        .mini-stick:nth-child(5)  { left: 48px;  transform: rotate(3deg);   height: 166px; }
-        .mini-stick:nth-child(6)  { left: 60px;  transform: rotate(11deg);  height: 158px; }
-        .mini-stick:nth-child(7)  { left: 72px;  transform: rotate(19deg);  height: 164px; }
-        .mini-stick:nth-child(8)  { left: 84px;  transform: rotate(26deg);  height: 155px; }
-        .mini-stick:nth-child(9)  { left: 95px;  transform: rotate(32deg);  height: 148px; }
+        .mini-stick:nth-child(1)  { left: 2px;   transform: rotate(-28deg); height: 135px; }
+        .mini-stick:nth-child(2)  { left: 12px;  transform: rotate(-20deg); height: 142px; }
+        .mini-stick:nth-child(3)  { left: 22px;  transform: rotate(-12deg); height: 148px; }
+        .mini-stick:nth-child(4)  { left: 33px;  transform: rotate(-4deg);  height: 140px; }
+        .mini-stick:nth-child(5)  { left: 44px;  transform: rotate(3deg);   height: 146px; }
+        .mini-stick:nth-child(6)  { left: 55px;  transform: rotate(11deg);  height: 138px; }
+        .mini-stick:nth-child(7)  { left: 65px;  transform: rotate(19deg);  height: 144px; }
+        .mini-stick:nth-child(8)  { left: 76px;  transform: rotate(26deg);  height: 136px; }
+        .mini-stick:nth-child(9)  { left: 86px;  transform: rotate(32deg);  height: 130px; }
 
         /* 抽出的指定籤支 */
         .fortune-stick {
-            width: 13px;
-            height: 195px;
+            width: 12px;
+            height: 175px;
             background: linear-gradient(90deg, #c78947, #fffaee 40%, #e0a762 75%, #965b26);
             border: 1.5px solid #734117;
             position: absolute;
@@ -243,7 +244,7 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 14px;
+            height: 12px;
             background: linear-gradient(90deg, #e53935, #ff5252, #c62828);
             border-radius: 5px 5px 0 0;
         }
@@ -251,12 +252,12 @@
         .fortune-stick::after {
             content: "";
             position: absolute;
-            top: 50px;
+            top: 45px;
             left: 0;
             width: 100%;
             height: 2px;
             background-color: rgba(90, 45, 10, 0.4);
-            box-shadow: 0 45px 0 rgba(90, 45, 10, 0.4), 0 90px 0 rgba(90, 45, 10, 0.4);
+            box-shadow: 0 40px 0 rgba(90, 45, 10, 0.4), 0 80px 0 rgba(90, 45, 10, 0.4);
         }
 
         /* 搖籤筒與竹籤束動畫 */
@@ -279,10 +280,10 @@
 
         @keyframes shakeBundle {
             0%   { transform: translateX(-50%) rotate(0deg) translateY(0); }
-            20%  { transform: translateX(-50%) rotate(7deg) translateY(-12px); }
+            20%  { transform: translateX(-50%) rotate(7deg) translateY(-10px); }
             40%  { transform: translateX(-50%) rotate(-8deg) translateY(-4px); }
-            60%  { transform: translateX(-50%) rotate(6deg) translateY(-10px); }
-            80%  { transform: translateX(-50%) rotate(-7deg) translateY(-5px); }
+            60%  { transform: translateX(-50%) rotate(6deg) translateY(-8px); }
+            80%  { transform: translateX(-50%) rotate(-7deg) translateY(-4px); }
             100% { transform: translateX(-50%) rotate(0deg) translateY(0); }
         }
 
@@ -292,24 +293,26 @@
 
         @keyframes pullOutStick {
             0%   { top: 25px; transform: translateX(-50%) rotate(0deg) scale(1); opacity: 0.4; }
-            40%  { top: -45px; transform: translateX(-50%) rotate(-8deg) scale(1.05); opacity: 0.8; }
-            70%  { top: -95px; transform: translateX(-50%) rotate(12deg) scale(1.15); opacity: 1; }
-            100% { top: -125px; transform: translateX(-50%) rotate(18deg) scale(1.2); opacity: 1; box-shadow: 4px 14px 25px rgba(168,32,26,0.6); }
+            40%  { top: -40px; transform: translateX(-50%) rotate(-8deg) scale(1.05); opacity: 0.8; }
+            70%  { top: -85px; transform: translateX(-50%) rotate(12deg) scale(1.15); opacity: 1; }
+            100% { top: -110px; transform: translateX(-50%) rotate(18deg) scale(1.2); opacity: 1; box-shadow: 4px 14px 25px rgba(168,32,26,0.6); }
         }
 
         .btn {
             background-color: var(--temple-red);
             color: white;
             border: none;
-            padding: 18px 45px;
-            font-size: 1.4rem;
+            padding: 15px 35px;
+            font-size: 1.2rem;
             font-weight: bold;
             border-radius: 40px;
             cursor: pointer;
             box-shadow: 0 6px 20px rgba(168, 32, 26, 0.35);
             transition: all 0.3s ease;
-            letter-spacing: 2px;
+            letter-spacing: 1.5px;
             display: inline-block;
+            width: 100%;
+            max-width: 320px;
         }
 
         .btn:hover {
@@ -336,7 +339,7 @@
             z-index: 200;
             justify-content: center;
             align-items: center;
-            padding: 20px;
+            padding: 15px;
         }
 
         .result-card {
@@ -344,14 +347,14 @@
             background-image: radial-gradient(#f4f1ea 1px, transparent 0);
             background-size: 22px 22px;
             width: 100%;
-            max-width: 640px;
+            max-width: 580px;
             border-radius: 20px;
-            padding: 40px 30px;
+            padding: 25px 20px;
             box-shadow: 0 15px 45px rgba(0,0,0,0.25);
             text-align: center;
-            border: 6px double var(--temple-red);
+            border: 5px double var(--temple-red);
             animation: scaleUp 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            max-height: 92vh;
+            max-height: 90vh;
             overflow-y: auto;
         }
 
@@ -361,20 +364,20 @@
         }
 
         .poe-zone {
-            margin: 25px 0;
+            margin: 20px 0;
             display: flex;
             justify-content: center;
-            gap: 55px;
+            gap: 40px;
             perspective: 1200px;
-            height: 140px;      
+            height: 120px;      
             align-items: center;
         }
 
         .poe {
-            width: 110px;
-            height: 52px;
+            width: 95px;
+            height: 45px;
             background: radial-gradient(circle at 40% 35%, #e53935, #550000);
-            border-radius: 0 0 52px 52px; 
+            border-radius: 0 0 45px 45px; 
             box-shadow: inset 3px 3px 8px rgba(255,255,255,0.35), inset -4px -4px 12px rgba(0,0,0,0.85), 0 8px 18px rgba(0,0,0,0.35);
             transform-style: preserve-3d;
             transform-origin: center center;
@@ -389,58 +392,59 @@
 
         @keyframes crescentSpin1 {
             0% { transform: translateY(0) rotateX(0deg) rotateY(0deg) rotateZ(-10deg) scale(1); }
-            20% { transform: translateY(-95px) translateX(-18px) rotateX(720deg) rotateY(540deg) rotateZ(350deg) scale(1.18); }
-            50% { transform: translateY(-45px) translateX(12px) rotateX(1440deg) rotateY(1080deg) rotateZ(710deg) scale(1.08); }
-            85% { transform: translateY(12px) translateX(-4px) rotateX(2160deg) rotateY(1620deg) rotateZ(1070deg) scale(0.98); }
+            20% { transform: translateY(-80px) translateX(-15px) rotateX(720deg) rotateY(540deg) rotateZ(350deg) scale(1.18); }
+            50% { transform: translateY(-35px) translateX(10px) rotateX(1440deg) rotateY(1080deg) rotateZ(710deg) scale(1.08); }
+            85% { transform: translateY(10px) translateX(-3px) rotateX(2160deg) rotateY(1620deg) rotateZ(1070deg) scale(0.98); }
             100% { transform: translateY(0) translateX(0) rotateX(2520deg) rotateY(1800deg) rotateZ(1250deg) scale(1); }
         }
 
         @keyframes crescentSpin2 {
             0% { transform: translateY(0) rotateX(0deg) rotateY(0deg) rotateZ(10deg) scale(1); }
-            20% { transform: translateY(-95px) translateX(18px) rotateX(-720deg) rotateY(-540deg) rotateZ(-350deg) scale(1.18); }
-            50% { transform: translateY(-45px) translateX(-12px) rotateX(-1440deg) rotateY(-1080deg) rotateZ(-710deg) scale(1.08); }
-            85% { transform: translateY(12px) translateX(4px) rotateX(-2160deg) rotateY(-1620deg) rotateZ(-1070deg) scale(0.98); }
+            20% { transform: translateY(-80px) translateX(15px) rotateX(-720deg) rotateY(-540deg) rotateZ(-350deg) scale(1.18); }
+            50% { transform: translateY(-35px) translateX(-10px) rotateX(-1440deg) rotateY(-1080deg) rotateZ(-710deg) scale(1.08); }
+            85% { transform: translateY(10px) translateX(3px) rotateX(-2160deg) rotateY(-1620deg) rotateZ(-1070deg) scale(0.98); }
             100% { transform: translateY(0) translateX(0) rotateX(-2520deg) rotateY(-1800deg) rotateZ(-1250deg) scale(1); }
         }
 
         .poe.sheng-flat {
             background: radial-gradient(circle at 50% 45%, #ef5350, #7a0000);
             box-shadow: inset 0 0 16px rgba(255,255,255,0.45), 0 4px 10px rgba(0,0,0,0.3);
-            border-radius: 0 0 52px 52px;
+            border-radius: 0 0 45px 45px;
         }
         .poe.sheng-convex {
             background: radial-gradient(circle at 30% 30%, #c62828, #300000);
             box-shadow: inset 5px 5px 12px rgba(255,255,255,0.25), inset -5px -5px 14px rgba(0,0,0,0.9), 0 3px 6px rgba(0,0,0,0.4);
-            border-radius: 52px 52px 0 0;
+            border-radius: 45px 45px 0 0;
         }
 
         .fortune-number {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             color: var(--gold);
             font-weight: 800;
-            letter-spacing: 2px;
-            margin-bottom: 8px;
+            letter-spacing: 1.5px;
+            margin-bottom: 6px;
         }
 
         .fortune-title {
-            font-size: 2.2rem;
+            font-size: 1.6rem;
             color: var(--temple-red);
             font-weight: 900;
-            margin-bottom: 15px;
-            letter-spacing: 2px;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
         }
 
         .fortune-poem {
-            font-size: 1.55rem;
+            font-size: 1.25rem;
             font-weight: 800;
             color: #1a1a1a;
-            border-top: 3px dashed var(--gold);
-            border-bottom: 3px dashed var(--gold);
-            padding: 20px 0;
-            margin: 22px 0;
-            letter-spacing: 2px;
-            line-height: 1.4;
-            white-space: nowrap;
+            border-top: 2px dashed var(--gold);
+            border-bottom: 2px dashed var(--gold);
+            padding: 15px 10px;
+            margin: 15px 0;
+            letter-spacing: 1.5px;
+            line-height: 1.5;
+            white-space: normal;
+            word-break: break-all;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -450,47 +454,138 @@
 
         .info-section {
             text-align: left;
-            margin-top: 24px;
+            margin-top: 18px;
             background-color: #fcfbf7;
-            padding: 24px;
-            border-radius: 12px;
-            border-left: 6px solid var(--gold);
+            padding: 16px;
+            border-radius: 10px;
+            border-left: 5px solid var(--gold);
         }
 
         .info-title {
             font-weight: bold;
             color: #935800;
-            margin-bottom: 12px;
+            margin-bottom: 8px;
             display: flex;
             align-items: center;
-            gap: 10px;
-            font-size: 1.4rem;
+            gap: 8px;
+            font-size: 1.1rem;
         }
 
         .info-text {
-            font-size: 1.2rem;
-            line-height: 1.7;
+            font-size: 1rem;
+            line-height: 1.6;
             color: #222;
             margin-bottom: 0;
             font-weight: 600;
         }
 
-        .close-btn {
-            background-color: #555;
-            margin-top: 22px;
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 18px;
             width: 100%;
         }
+
+        .close-btn {
+            background-color: var(--temple-red);
+            width: 100%;
+            max-width: 100%;
+        }
         .close-btn:hover {
-            background-color: #222;
+            background-color: #bd2a23;
         }
 
         footer {
             margin-top: auto;
-            padding: 25px;
-            font-size: 1rem;
+            padding: 20px;
+            font-size: 0.85rem;
             color: #666;
             text-align: center;
-            white-space: nowrap;
+            white-space: normal;
+        }
+
+        @media (min-width: 769px) {
+            header {
+                padding: 20px 30px;
+            }
+            .logo {
+                font-size: 1.5rem;
+            }
+            .logo span {
+                font-size: 1.05rem;
+                padding: 4px 12px;
+            }
+            .bureau-tag {
+                font-size: 0.95rem;
+            }
+            .hero-title {
+                font-size: 2.3rem;
+            }
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+            .fortune-zone {
+                height: 310px;
+            }
+            .stick-container {
+                width: 165px;
+                height: 225px;
+            }
+            .fortune-sticks-bundle {
+                top: -65px;
+                width: 120px;
+                height: 170px;
+            }
+            .mini-stick {
+                width: 10px;
+                height: 165px;
+            }
+            .fortune-stick {
+                width: 13px;
+                height: 195px;
+            }
+            .btn {
+                padding: 18px 45px;
+                font-size: 1.4rem;
+                width: auto;
+            }
+            .result-card {
+                padding: 40px 30px;
+                max-width: 640px;
+            }
+            .poe-zone {
+                height: 140px;
+                gap: 55px;
+            }
+            .poe {
+                width: 110px;
+                height: 52px;
+                border-radius: 0 0 52px 52px;
+            }
+            .fortune-number {
+                font-size: 1.5rem;
+            }
+            .fortune-title {
+                font-size: 2.2rem;
+            }
+            .fortune-poem {
+                font-size: 1.55rem;
+                padding: 20px 0;
+                white-space: nowrap;
+            }
+            .info-section {
+                padding: 24px;
+            }
+            .info-title {
+                font-size: 1.4rem;
+            }
+            .info-text {
+                font-size: 1.2rem;
+            }
+            footer {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
@@ -505,7 +600,7 @@
 
     <div class="main-container">
         <h1 class="hero-title">尋找您的臺北好宿靈籤</h1>
-        <p class="hero-subtitle">誠心默念您對臺北旅行與好宿的期待，搖動籤筒抽籤，<br>隨後將進行擲筊，領取專屬好宿祝福！</p>
+        <p class="hero-subtitle">誠心默念您對臺北旅行與好宿的期待，搖動籤筒抽籤，隨後將進行擲筊，領取專屬好宿祝福！</p>
 
         <div class="fortune-zone">
             <div class="fortune-sticks-bundle" id="sticksBundle">
@@ -529,16 +624,16 @@
     <!-- 彈出視窗 1：擲筊請示 -->
     <div class="modal" id="poeModal">
         <div class="result-card">
-            <h2 style="color: var(--temple-red); margin-bottom: 10px; font-size: 1.8rem; font-weight: 800;">向神明稟報與擲筊</h2>
-            <p style="font-size: 1.15rem; color:#444; font-weight: 500;">竹籤已抽出！請點擊按鈕擲筊，請示神明是否賜予此好宿籤？</p>
+            <h2 style="color: var(--temple-red); margin-bottom: 8px; font-size: 1.5rem; font-weight: 800;">向神明稟報與擲筊</h2>
+            <p style="font-size: 1rem; color:#444; font-weight: 500;">竹籤已抽出！請點擊按鈕擲筊，請示神明是否賜予此好宿籤？</p>
             
             <div class="poe-zone">
                 <div class="poe" id="poe1"></div>
                 <div class="poe" id="poe2"></div>
             </div>
             
-            <p id="poeResultText" style="font-weight:bold; color:var(--gold); margin: 10px 0; min-height: 28px; font-size: 1.25rem;"></p>
-            <button class="btn" id="poeBtn" onclick="throwPoe()" style="width: 100%;">擲筊請示神明</button>
+            <p id="poeResultText" style="font-weight:bold; color:var(--gold); margin: 8px 0; min-height: 24px; font-size: 1.1rem;"></p>
+            <button class="btn" id="poeBtn" onclick="throwPoe()" style="width: 100%; max-width: 100%;">擲筊請示神明</button>
         </div>
     </div>
 
@@ -554,7 +649,9 @@
                 <div class="info-text" id="resFortune">載入中...</div>
             </div>
 
-            <button class="btn close-btn" onclick="resetAll()">再次抽好宿籤</button>
+            <div class="button-group">
+                <button class="btn close-btn" onclick="resetAll()">再次抽好宿籤</button>
+            </div>
         </div>
     </div>
 
@@ -582,7 +679,7 @@
             { id: "第 十六 首", title: "小吉・復古懷舊宿", poem: "古色古香情意長 歲月沈香思故人", fortune: "充滿大稻埕古風或歷史風華的特色旅宿，在紅磚洋樓與懷舊懷舊氛圍中，細細品味臺北百年風華的迷人故事。" },
             { id: "第 十七 首", title: "大吉・智慧科技宿", poem: "科技引路行無礙 智慧生活樂悠遊", fortune: "導入智能管家與自動化設施的高科技新穎旅店，提供流暢、便捷且充滿未來感的現代化住宿體驗。" },
             { id: "第 十八 首", title: "上吉・河岸夕照宿", poem: "水光山色兩相宜 夕陽無限好心情", fortune: "鄰近淡水河畔或大稻埕碼頭的景觀旅宿，傍晚欣賞絕美夕陽與河岸風光，夜晚浪漫愜意、好運加倍。" },
-            { id: "第 十九 首", title: "吉・寵物友善宿", poem: "毛孩相伴行旅樂 歡聲笑語滿行囊", fortune: "專為喜愛攜帶寵物旅客打造的友善旅宿，設備周到貼心，讓您與毛小孩在臺北共度最歡樂溫馨的假期。" },
+            { id: "第 十九 首", title: "吉・寵物友善宿", poem: "毛孩相伴行旅樂 歡聲笑語滿行囊", fortune: "專為喜愛攜帶寵物旅客打造的友善旅宿，設備周到貼心，讓您與毛小孩 in 臺北共度最歡樂溫馨的假期。" },
             { id: "第 二十 首", title: "大吉・至尊圓滿宿", poem: "吉星高照福氣多 臺北好宿最稱心", fortune: "抽中籤王至尊好宿！象徵您的臺北之旅心想事成、圓滿順遂，處處遇貴人、好運相隨一整年！" },
             { id: "第 二十一 首", title: "大吉・觀景溫泉宿", poem: "山水相逢春意鬧 雲深處處笑聲歡", fortune: "適合前往北投或陽明山一帶的景觀溫泉旅宿，享受雲霧繚繞的療癒美景，讓身心靈獲得最徹底的放鬆與充電。" },
             { id: "第 二十二 首", title: "上吉・特色老宅宿", poem: "紅磚洋樓思往事 咖啡香裡好時光", fortune: "隱身於大稻埕的古風文旅，細細品味百年風華，感受兼具歷史與現代感的迷人住宿體驗。" }
