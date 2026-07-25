@@ -541,7 +541,7 @@
     <div class="modal" id="poeModal">
         <div class="result-card">
             <h2 style="color: var(--temple-red); margin-bottom: 10px; font-size: 1.8rem; font-weight: 800;">向神明稟報與擲筊</h2>
-            <p style="font-size: 1.15rem; color:#444; font-weight: 500;">竹籤已抽出！請點擊按鈕擲出筊杯，請示神明是否賜予此好宿籤？</p>
+            <p style="font-size: 1.15rem; color:#444; font-weight: 500;">竹籤已抽出！請點擊按鈕擲筊，請示神明是否賜予此好宿籤？</p>
             
             <div class="poe-zone">
                 <div class="poe" id="poe1"></div>
@@ -666,14 +666,14 @@
                     poe1.classList.add('sheng-flat');
                     poe2.classList.add('sheng-convex');
                     poeResultText.innerText = "【 聖筊 】 神明允杯：此好宿極佳，旅途平安圓滿！";
-                } else if (poeType === 'xiao') {
-                    poe1.classList.add('xiao-flat1');
-                    poe2.classList.add('xiao-flat2');
+                } else if (poeType === 'sheng') {
+                    poe1.classList.add('sheng-flat1');
+                    poe2.classList.add('sheng-convex1');
                     poeResultText.innerText = "【 聖筊 】 神明賜杯：心境放輕鬆，享受美好臺北宿！";
                 } else {
-                    poe1.classList.add('yin-convex1');
-                    poe2.classList.add('yin-convex2');
-                    poeResultText.innerText = "【 聖筊 】 神明賜福：享受旅程，旅行平安好運連連！";
+                    poe1.classList.add('sheng-flat2');
+                    poe2.classList.add('sheng-convex2');
+                    poeResultText.innerText = "【 聖筊 】 神明賜杯：享受旅程，旅行平安好運連連！";
                 }
 
                 setTimeout(() => {
