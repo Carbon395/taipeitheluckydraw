@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>臺北市政府觀光傳播局・旅遊臺北好宿的好運籤</title>
+    <title>臺北好宿祈福體驗</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -598,7 +598,7 @@
 
     <script>
         const fortuneDatabase = [
-            { id: "第 一 首", title: "大吉・質感旅店", poem: "雲開見日百福至 漫遊臺北萬事新", fortune: "恭喜抽中質感好宿！代表您的臺北行旅將舒適無比、處處驚喜，無論設計旅店或精品旅店皆能讓您一夜好眠、賓至如歸。" },
+            { id: "第 一 首", title: "大吉・質感旅店", poem: "雲開見日百福至 漫遊臺北萬事新", fortune: "恭喜抽中質感旅店！代表您的臺北行旅將舒適無比、處處驚喜，無論設計旅店或精品旅店皆能讓您一夜好眠、賓至如歸。" },
             { id: "第 二 首", title: "上吉・溫馨旅宿", poem: "春風得意行旅順 滿城燈火笑聲甜", fortune: "您的臺北住宿運正處於最溫馨的高峰，在巷弄間的人情味旅宿中感受滿滿祝福，夜宿安穩且充滿歡笑。" },
             { id: "第 三 首", title: "中吉・商務旅店", poem: "靜心慢行安穩路 隨遇而安福自來", fortune: "最適合差旅與深度漫步的旅館好宿，房間隔音極佳、環境沈穩，讓您在忙碌行程後獲得最極致的身心放鬆。" },
             { id: "第 四 首", title: "小吉・文創旅宿", poem: "微風細雨潤無聲 古道尋幽意自清", fortune: "象徵結合在地文化與美學的文創青年旅館或特色旅店，在充滿設計感的空間中品味臺北獨有的文藝氣息。" },
@@ -673,7 +673,7 @@
             const poeResultText = document.getElementById('poeResultText');
 
             poeBtn.disabled = true;
-            poeResultText.innerText = "筊杯旋轉翻滾中...";
+            poeResultText.innerText = "筊杯旋轉翻滾.請示神明中...";
             
             poe1.classList.add('poe-spin-1');
             poe2.classList.add('poe-spin-2');
@@ -685,7 +685,7 @@
             const shengMessages = [
                 "【 聖筊 】 神明允杯：臺北好宿佳，旅途平安圓滿！",
                 "【 聖筊 】 神明賜杯：心境放輕鬆，享受美好臺北宿！",
-                "【 聖筊 】 神明認證：絕佳好宿，穩居上上大吉之兆！"
+                "【 聖筊 】 神明應杯：絕佳好宿，入住即迎上上大吉！"
             ];
             const randomMsg = shengMessages[Math.floor(Math.random() * shengMessages.length)];
 
